@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Machine Learning - Acerca de</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+   <!-- Header -->
+  <header>
+    <div class="container header-container">
+      <div class="logo">
+        <div class="logo-img">
+          <img src="img/logo1.png" alt="Logo Machine Learning">
+        </div>
+        <h1>Machine Learning</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="acerca.html">Acerca de</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+</body>
+</html>
+
+    <main class="container">
+        <section class="hero">
+            <h2>Acerca del Machine Learning</h2>
+            <p>Conoce más sobre esta revolucionaria tecnología que está transformando el mundo.</p>
+        </section>
+        
+        <section class="content-section">
+            <article>
+                <h3>Historia del Machine Learning</h3>
+                <p>El concepto de Machine Learning tiene sus raíces en la década de 1950, cuando Alan Turing propuso la idea de máquinas que pudieran aprender. Sin embargo, no fue hasta la década de 1990 que el campo realmente despegó gracias al aumento en la capacidad de procesamiento y la disponibilidad de grandes conjuntos de datos.</p>
+                
+                <h3>Algoritmos Detallados</h3>
+                
+                <div class="algorithm-card">
+                    <h4>Regresión Lineal <span class="algorithm-icon">📈</span></h4>
+                    <div class="algorithm-content">
+                        <p>Algoritmo de aprendizaje supervisado utilizado para predecir un valor continuo. Su objetivo es encontrar una relación lineal entre una variable dependiente y una o más variables independientes.</p>
+                        <p>La regresión lineal simple utiliza una sola variable predictora, mientras que la regresión lineal múltiple utiliza varias. Es uno de los algoritmos más fundamentales en ML y sirve como base para técnicas más avanzadas.</p>
+                        <p><strong>Aplicaciones:</strong> Predicción de precios de viviendas, pronóstico de ventas, análisis de tendencias económicas.</p>
+                        <p><strong>Ventajas:</strong> Simple de implementar e interpretar, computacionalmente eficiente.</p>
+                        <p><strong>Limitaciones:</strong> Asume una relación lineal, sensible a valores atípicos.</p>
+                    </div>
+                    <span class="read-more">Ver más...</span>
+                </div>
+                
+                <div class="algorithm-card">
+                    <h4>Regresión Logística <span class="algorithm-icon">🔍</span></h4>
+                    <div class="algorithm-content">
+                        <p>A pesar de su nombre, es un algoritmo de aprendizaje supervisado para clasificación. Predice la probabilidad (de 0 a 1) de que un dato pertenezca a una categoría específica.</p>
+                        <p>Utiliza la función sigmoide para transformar la salida lineal en una probabilidad. Es ampliamente utilizado en problemas de clasificación binaria, pero puede extenderse a clasificación multiclase.</p>
+                        <p><strong>Aplicaciones:</strong> Diagnóstico médico (enfermo/sano), detección de spam, análisis de riesgo crediticio.</p>
+                        <p><strong>Ventajas:</strong> Proporciona probabilidades, fácil de regularizar, eficiente computacionalmente.</p>
+                        <p><strong>Limitaciones:</strong> Asume relación lineal entre características y el logaritmo de la probabilidad.</p>
+                    </div>
+                    <span class="read-more">Ver más...</span>
+                </div>
+                
+                <div class="algorithm-card">
+                    <h4>Árboles de Decisión <span class="algorithm-icon">🌳</span></h4>
+                    <div class="algorithm-content">
+                        <p>Algoritmo de aprendizaje supervisado que puede usarse para clasificación y regresión. Su funcionamiento imita a cómo un humano toma decisiones mediante una serie de preguntas de sí/no.</p>
+                        <p>Los árboles dividen los datos en subconjuntos basados en el valor de las características, creando una estructura jerárquica. Cada nodo interno representa una prueba sobre una característica, cada rama representa el resultado de la prueba, y cada nodo hoja representa una etiqueta de clase.</p>
+                        <p><strong>Aplicaciones:</strong> Diagnóstico médico, evaluación de riesgo, segmentación de clientes.</p>
+                        <p><strong>Ventajas:</strong> Fácil de entender e interpretar, puede manejar tanto características numéricas como categóricas.</p>
+                        <p><strong>Limitaciones:</strong> Propensos a sobreajuste, sensibles a pequeños cambios en los datos.</p>
+                    </div>
+                    <span class="read-more">Ver más...</span>
+                </div>
+                
+                <div class="algorithm-card">
+                    <h4>Random Forest (Bosque Aleatorio) <span class="algorithm-icon">🌲</span></h4>
+                    <div class="algorithm-content">
+                        <p>Algoritmo de ensamble que combina múltiples Árboles de Decisión para crear un modelo más potente y robusto. La idea central es: "La sabiduría de las multitudes".</p>
+                        <p>Cada árbol en el bosque se entrena con una muestra aleatoria de los datos (bootstrapping) y considera solo un subconjunto aleatorio de características en cada división. La predicción final se obtiene por votación (clasificación) o promediación (regresión) de las predicciones de todos los árboles.</p>
+                        <p><strong>Aplicaciones:</strong> Clasificación de imágenes, detección de fraudes, predicción de precios.</p>
+                        <p><strong>Ventajas:</strong> Alta precisión, resistente al sobreajuste, puede manejar grandes conjuntos de datos con muchas características.</p>
+                        <p><strong>Limitaciones:</strong> Menos interpretable que un árbol individual, computacionalmente más costoso.</p>
+                    </div>
+                    <span class="read-more">Ver más...</span>
+                </div>
+                
+                <div class="algorithm-card">
+                    <h4>Máquinas de Vectores de Soporte (SVM) <span class="algorithm-icon">⚡</span></h4>
+                    <div class="algorithm-content">
+                        <p>Algoritmo de aprendizaje supervisado poderoso, principalmente para clasificación. Su objetivo es encontrar el mejor límite de separación (un "hiperplano") entre dos clases.</p>
+                        <p>SVM busca maximizar el margen entre las clases, lo que conduce a una mejor generalización. Puede manejar datos linealmente separables usando kernels para transformar el espacio de características y hacerlos separables linealmente en un espacio de mayor dimensión.</p>
+                        <p><strong>Aplicaciones:</strong> Reconocimiento de escritura a mano, clasificación de texto, bioinformática.</p>
+                        <p><strong>Ventajas:</strong> Efectivo en espacios de alta dimensión, versátil gracias a diferentes funciones kernel.</p>
+                        <p><strong>Limitaciones:</strong> No funciona bien con conjuntos de datos muy grandes, sensible a la elección de parámetros.</p>
+                    </div>
+                    <span class="read-more">Ver más...</span>
+                </div>
+                
+                <div class="algorithm-card">
+                    <h4>K-Vecinos Más Cercanos (K-NN) <span class="algorithm-icon">📍</span></h4>
+                    <div class="algorithm-content">
+                        <p>Algoritmo de aprendizaje supervisado simple, usado principalmente para clasificación y regresión. Es un algoritmo "perezoso" (lazy), lo que significa que no "aprende" un modelo durante el entrenamiento, sino que memoriza todos los datos.</p>
+                        <p>Para hacer una predicción, K-NN encuentra los K puntos de datos más cercanos al punto de consulta y toma una decisión basada en la mayoría de votos (clasificación) o el promedio (regresión) de estos vecinos.</p>
+                        <p><strong>Aplicaciones:</strong> Sistemas de recomendación, reconocimiento de patrones, diagnóstico médico.</p>
+                        <p><strong>Ventajas:</strong> Simple de entender e implementar, no necesita entrenamiento.</p>
+                        <p><strong>Limitaciones:</strong> Computacionalmente costoso para grandes conjuntos de datos, sensible a la escala de las características.</p>
+                    </div>
+                    <span class="read-more">Ver más...</span>
+                </div>
+                
+                <div class="algorithm-card">
+                    <h4>K-Means <span class="algorithm-icon">🔢</span></h4>
+                    <div class="algorithm-content">
+                        <p>Es el algoritmo de agrupación (clustering) no supervisado más popular. Su objetivo es dividir un conjunto de datos en K grupos (o "clusters") donde los puntos dentro de un mismo grupo sean lo más similares posible entre sí, y lo más diferentes posible a los puntos de otros grupos.</p>
+                        <p>K-Means itera entre asignar puntos a clusters y recalcular los centroides de los clusters hasta que converge. La elección del número K de clusters es crucial y a menudo se determina usando métodos como el codo o silhouette.</p>
+                        <p><strong>Aplicaciones:</strong> Segmentación de clientes, compresión de imágenes, análisis de genética.</p>
+                        <p><strong>Ventajas:</strong> Simple y rápido, escalable a grandes conjuntos de datos.</p>
+                        <p><strong>Limitaciones:</strong> Sensible a la inicialización, asume clusters esféricos y de tamaño similar.</p>
+                    </div>
+                    <span class="read-more">Ver más...</span>
+                </div>
+                
+                <h3>Temas Avanzados y Tendencias Actuales</h3>
+                <ul>
+                    <li><strong>Redes Neuronales y Aprendizaje Profundo (Deep Learning):</strong> Modelos inspirados en el cerebro humano, excelentes para datos no estructurados como imágenes, audio y texto.</li>
+                    <li><strong>Procesamiento del Lenguaje Natural (NLP):</strong> Cómo las máquinas entienden y generan lenguaje humano (ej: ChatGPT, traductores).</li>
+                    <li><strong>Visión por Computadora (Computer Vision):</strong> Enseñar a las máquinas a "ver" y entender imágenes y videos.</li>
+                    <li><strong>Ética y Sesgo en ML:</strong> Cómo los sesgos en los datos pueden llevar a modelos injustos y discriminatorios. Es un área de crítica importancia.</li>
+                    <li><strong>AutoML:</strong> Automatizar el proceso de construcción de modelos de ML.</li>
+                </ul>
+            </article>
+            
+            <aside>
+                <h3>Flujo de Trabajo Detallado</h3>
+                <ol>
+                    <li><strong>Recolección de Datos:</strong> Obtener datos de diversas fuentes (bases de datos, APIs, archivos CSV, etc.).</li>
+                    <li><strong>Limpieza y Preprocesamiento:</strong> Manejar valores faltantes, corregir errores, codificar variables categóricas, escalar o normalizar los datos.</li>
+                    <li><strong>Análisis Exploratorio de Datos (EDA):</strong> Usar estadísticas y visualizaciones para entender los datos, encontrar correlaciones y detectar anomalías.</li>
+                    <li><strong>Ingeniería de Características:</strong> Crear nuevas características a partir de las existentes para mejorar el rendimiento del modelo.</li>
+                    <li><strong>Selección y Entrenamiento del Modelo:</strong> Elegir un algoritmo (o varios) y entrenarlo con los datos.</li>
+                    <li><strong>Evaluación del Modelo:</strong> Medir el rendimiento del modelo utilizando datos que no vio durante el entrenamiento (conjunto de prueba).</li>
+                    <li><strong>Ajuste de Hiperparámetros:</strong> Optimizar los ajustes del modelo para obtener el mejor rendimiento.</li>
+                    <li><strong>Despliegue:</strong> Implementar el modelo en un entorno de producción para que pueda hacer predicciones sobre datos reales.</li>
+                    <li><strong>Monitoreo y Mantenimiento:</strong> Supervisar el modelo para asegurarse de que su rendimiento no se degrade con el tiempo (concepto de "desfase de modelo" o model drift).</li>
+                </ol>
+                
+              <h3>Enlaces de interés</h3>
+<div class="external-links">
+    <a href="https://www.tensorflow.org/" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/2/2d/Tensorflow_logo.svg" alt="TensorFlow">
+        <span>TensorFlow</span>
+    </a>
+    <a href="https://pytorch.org/" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/1/10/PyTorch_logo_icon.svg" alt="PyTorch">
+        <span>PyTorch</span>
+    </a>
+    <a href="https://www.kaggle.com/" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Kaggle_logo.png" alt="Kaggle">
+        <span>Kaggle</span>
+    </a>
+    <a href="https://scikit-learn.org/" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" alt="Scikit-learn">
+        <span>Scikit-learn</span>
+    </a>
+</div>
+              
+            </aside>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Machine Learning</h3>
+                    <p>Explorando el futuro de la inteligencia artificial.</p>
+                    <div class="social-links">
+                        <a href="#">Facebook</a>
+                        <a href="#">Twitter</a>
+                        <a href="#">LinkedIn</a>
+                        <a href="#">Instagram</a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Enlaces rápidos</h3>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="acerca.html">Acerca de</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contacto</h3>
+                    <p>Email: info@machinelearning.com</p>
+                    <p>Teléfono: +1 234 567 890</p>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2023 Machine Learning. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

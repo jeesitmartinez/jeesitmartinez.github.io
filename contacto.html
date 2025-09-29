@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Machine Learning - Inicio</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Header -->
+
+  <header>
+    <div class="container header-container">
+      <div class="logo">
+        <div class="logo-img">
+          <img src="img/logo1.png" alt="Logo Machine Learning">
+        </div>
+        <h1>Machine Learning</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="acerca.html">Acerca de</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+</body>
+</html>
+ 
+
+
+    <main class="container">
+        <section class="hero">
+            <h2>Contacto</h2>
+            <p>Ponte en contacto con nuestro equipo de expertos en Machine Learning.</p>
+        </section>
+        
+      <section class="team">
+  <h2>Nuestro Equipo</h2>
+  <div class="team-members">
+    
+    <!-- Karla -->
+    <div class="team-member">
+      <img src="img/intkarlacolina.jpeg" alt="Integrante del equipo" class="member-img">
+      <h3>Karla Colina</h3>
+      <p>Cédula: 20-59-7642</p>
+      <p>Lic. en Ingeniería de Software</p>
+    </div>
+
+    <!-- Jeesit-->
+    <div class="team-member">
+      <img src="img/Jeesit.jpeg" alt="Integrante del equipo" class="member-img">
+      <h3>Jeesit Martínez</h3>
+      <p>Cédula: 8-1018-167</p>
+      <p>Lic. en Ingeniería de Software</p>
+    </div>
+
+  </div>
+</section>
+      
+        
+    <section class="form-container">
+            <h2>Formulario de Contacto</h2>
+           <form action="contacto.jsp" method="post" accept-charset="UTF-8">
+                <div class="form-group">
+                    <label for="nombre">Nombre completo:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="asunto">Asunto:</label>
+                    <select id="asunto" name="asunto">
+                        <option value="consulta">Consulta general</option>
+                        <option value="proyecto">Propuesta de proyecto</option>
+                        <option value="colaboracion">Colaboración</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                </div>
+                
+                <button type="submit">Enviar Mensaje</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Machine Learning</h3>
+                    <p>Explorando el futuro de la inteligencia artificial.</p>
+                    <div class="social-links">
+                        <a href="#">Facebook</a>
+                        <a href="#">Twitter</a>
+                        <a href="#">LinkedIn</a>
+                        <a href="#">Instagram</a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Enlaces rápidos</h3>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="acerca.html">Acerca de</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contacto</h3>
+                    <p>Email: info@machinelearning.com</p>
+                    <p>Teléfono: +1 234 567 890</p>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2023 Machine Learning. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
